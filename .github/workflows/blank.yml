@@ -12,7 +12,6 @@ jobs:
       - name: Run tests
         uses: matlab-actions/run-tests@v1
         with:
-          test-results-junit: test-results/results.xml
           code-coverage-cobertura: coverage.xml
       - uses: codecov/codecov-action@v2
         with:
